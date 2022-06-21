@@ -1,0 +1,127 @@
+@import "custom-media";
+@import "variables";
+
+.technology {
+  @include padding(60px, 108px);
+  background-color: #FFFFFF;
+
+  @include media-992() {
+    padding-top: 40px;
+  }
+  @include media-768() {
+    @include padding(20px, 20px);
+  }
+}
+
+.technology__title {
+  font-size: 3.6rem;
+  line-height: 1.19;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 56px;
+
+  @include media-992() {
+    font-size: 3rem;
+    margin-bottom: 40px
+  }
+  @include media-600() {
+    font-size: 2.6rem;
+    margin-bottom: 0;
+  }
+  @include media-400() {
+    font-size: 2rem;
+  }
+}
+
+.technology__content {
+  display: grid;
+  text-align: center;
+  gap: 60px;
+  grid-template-columns: repeat(4, 1fr);
+
+  @include media-992() {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  @include media-600() {
+    gap: 10px;
+  }
+}
+
+.technology__item-grid {
+  display: grid;
+  text-align: center;
+  justify-items: center;
+  grid-template-rows: repeat(2, 1fr);
+  position: relative;
+}
+
+.technology__box-title {
+  font-weight: 700;
+  font-size: 10rem;
+  line-height: 1.2;
+  color: rgba(16, 16, 16, 0.08);
+
+  @include  media-992() {
+    font-size: 12rem;
+  }
+  @include media-400() {
+    font-size: 10rem;
+  }
+}
+
+.technology__link {
+  display: block;
+  width: 255px;
+  height: 226px;
+  position: absolute;
+  top: 60px;
+  padding: 15px;
+  text-decoration: none;
+
+  @include media-992() {
+    width: $custom-width;
+  }
+
+  @include media-768() {
+    width: 100%;
+    height: 70%;
+    padding: 5%;
+  }
+}
+
+.technology__signature {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 1.22;
+  color: #101010;
+  margin-bottom: 15px;
+}
+
+.technology__sub-img {
+  width: 48px;
+  height: 54px;
+  margin-bottom: 14px;
+
+  @include media-992() {
+    width: 30%;
+    height: 30%;
+  }
+}
+
+.technology__sub-img-bg {
+  width: 30%;
+  height: 30%;
+  margin-bottom: 5px;
+
+  @include media-560() {
+    width: 40%;
+    height: 40%;
+  }
+}
+
+.technology__text {
+  font-size: 1.4rem;
+  line-height: 1.21;
+  color: #000000;
+}

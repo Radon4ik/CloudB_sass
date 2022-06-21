@@ -1,3 +1,10 @@
-body {
-    background-color:  red;
-}
+@import "reset.scss";
+@import "general.scss";
+@import "variables.scss";
+@import "hero.scss";
+@import "about.scss";
+@import "features.scss";
+@import "technology.scss";
+@import "advantage.scss";
+@import "contact.scss";
+@import "footer.scss";
